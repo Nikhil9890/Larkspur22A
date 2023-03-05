@@ -24,7 +24,7 @@ Feature: यह हमारी पहली विशेषता है
     Given ब्राउज़र खुला
     When User enter app url
     Then Application should launch
-    EitherOR com.TestingShastra_Pages
+    
     
     #And check more outcomes
     #And some other precondition

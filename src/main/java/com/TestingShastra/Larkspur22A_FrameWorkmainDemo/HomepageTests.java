@@ -30,7 +30,6 @@ public class HomepageTests extends Testbase{
 		Thread.sleep(10000);
 		WebElement k =KeyWord.getWebElement( "xpath","(//div[contains(text(),'Select Car')])[1]");
 		k.click();
-		
 	}
 
 	@Test

@@ -6,8 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.TestingShastra.Larkspur22A_FrameWorkmainDemo.KeyWord;
+import com.TestingShastra.Larkspur22A_FrameWorkmainDemo.Testbase;
 
-public class CompareCarPage {
+public class CompareCarPage extends CarWaleHomePage {
 
 	@FindBy(xpath="(//div[contains (text(), 'Select Car')])[1]")
 	WebElement selectCarElement;
@@ -23,7 +24,6 @@ public class CompareCarPage {
 		try {
 			Thread.sleep(13000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		selectCarElement.click();

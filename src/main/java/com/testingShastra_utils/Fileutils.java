@@ -22,10 +22,8 @@ public class Fileutils {
 			LocatorValue = prop.getProperty(Locator); // getProperty() method return string containing the value of
 														// property
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return LocatorValue;
@@ -56,7 +54,7 @@ public class Fileutils {
 		FileInputStream fis=null;
 		Properties prop=null;
 		try {
-			fis= new FileInputStream(basedir+"/src/main/resources/ijmeetdata.properties");
+			fis= new FileInputStream(basedir+"/src/main/resources/Combine.properties");
 			prop= new Properties();
 			prop.load(fis);
 			urlvalue = prop.getProperty("app"+env+"url");
@@ -71,7 +69,6 @@ public class Fileutils {
 		return urlvalue;
 		
 		// TODO Auto-generated method stub
-
 	}
 
 }

@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.IJmeet_TestCases">
+      <class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.HomepageTests">
         <methods>
           <include name="startTest"/>
+          <include name="afterSelectCarOtherBrandcontainPopularbrand1"/>
+          <include name="afterSelectCarOtherBrandcontainPopularbrand"/>
           <include name="launch_Browser"/>
-          <include name="SignINpage"/>
+          <include name="verifyCompareCarsShouldShowAllDetailsOfCar"/>
         </methods>
-      </class> <!-- com.TestingShastra.Larkspur22A_FrameWorkmainDemo.IJmeet_TestCases -->
+      </class> <!-- com.TestingShastra.Larkspur22A_FrameWorkmainDemo.HomepageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -103,7 +103,7 @@ public class KeyWord {
 			return null;
 	}
 
-	public static void takepngscreenshot_savedat(String location) {
+	public static void takepngscreenshot_savedata(String location) {
 		Screenshot s = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
 		try {
 			ImageIO.write(s.getImage(), "PNG", new File(location));

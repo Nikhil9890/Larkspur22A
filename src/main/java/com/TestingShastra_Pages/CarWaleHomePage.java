@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.TestingShastra.Larkspur22A_FrameWorkmainDemo.KeyWord;
 import com.TestingShastra.Larkspur22A_FrameWorkmainDemo.Testbase;
+import com.TestingShastra_Pages.*;
 
 public class CarWaleHomePage extends Testbase {
 	

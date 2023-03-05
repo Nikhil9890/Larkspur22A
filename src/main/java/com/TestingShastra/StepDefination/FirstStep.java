@@ -26,8 +26,8 @@ public class FirstStep {
 		Assert.assertEquals(KeyWord.driver.getTitle(), "New Cars, Used Cars, Buy a Car, Sell Your Car - CarWale");
 	}
 	
-	@EitherOR ("com.TestingShastra_Pages")
-	public void verify() {
-
-	}
+//	@EitherOR ("com.TestingShastra_Pages")
+//	public void verify() {
+//
+//	}
 }

@@ -1,6 +1,7 @@
 package com.TestingShastra.StepDefination;
 
 import io.cucumber.java.StepDefinitionAnnotations;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.StepDefinitionAnnotation;
 
 import org.apiguardian.api.API;
@@ -13,7 +14,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)                    //target means where annotation may apper
+@Target(ElementType.METHOD)                    //target means where annotation may appers
 @StepDefinitionAnnotation
 @Documented
 @Repeatable(EitherOR.EitherORs.class)
@@ -30,8 +31,6 @@ public @interface EitherOR {
 	@StepDefinitionAnnotations
 	@Documented
 	@interface EitherORs {
-
 		EitherOR[] value();
 	}
-
 }

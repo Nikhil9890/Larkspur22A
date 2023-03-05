@@ -73,7 +73,5 @@ public class IJmeet_TestCases extends Testbase {
 		KeyWord.presenceofelement(By.xpath(IjmeetLocator.Close));
 		//Waitfor.presenceofelement(By.xpath(IjmeetLocator.Close));
 		KeyWord.getWebElement(LocatorType.xpath, IjmeetLocator.Close).click();
-
 	}
-
 }

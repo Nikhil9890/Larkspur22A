@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.TestingShastra.Larkspur22A_FrameWorkDemo.AppTest"/>
-      <class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.HomepageTests"/>
+     <class name="com.TestingShastra.Larkspur22A_FrameWorkDemo.AppTest"/>
+      <class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.HomepageTests">
+      </class>
       <class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.IJmeet_TestCases"/>
     </classes>
   </test> <!-- Test -->
