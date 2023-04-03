@@ -3,25 +3,26 @@ package com.TestingShastra.Larkspur22A_FrameWorkmainDemo;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.groovy.parser.antlr4.GroovyParser.KeywordsContext;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.testingShastra_utils.Fileutils;
 import com.testingShastra_utils.Carwale_Locator;
 
-import bsh.This;
 
+@Listeners(listeners.ListenerClass.class) 
 public class HomepageTests extends Testbase{
 
-	static String webaddress=com.testingShastra_utils.Carwale_Locator.url;
+	static String webaddress=com.testingShastra_utils.Fileutils.getappurl("stage");
 	
 	public static void commoncode(String[] args) throws InterruptedException {
 		KeyWord.launchUrl(webaddress);
 		KeyWord.windowmanage();
 		Thread.sleep(5000);
+		KeyWord.driver.switchTo().alert().dismiss();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 		Thread.sleep(10000);

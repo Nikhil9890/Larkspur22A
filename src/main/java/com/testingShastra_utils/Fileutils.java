@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.testng.annotations.Parameters;
+
 public class Fileutils {
 
 	// Write code to read properties file
@@ -67,8 +69,6 @@ public class Fileutils {
 		}
 		System.out.println(urlvalue);
 		return urlvalue;
-		
-		// TODO Auto-generated method stub
 	}
 
 }

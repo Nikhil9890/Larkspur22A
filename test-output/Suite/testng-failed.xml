@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="env" value="dev"/>
+  <test parallel="classes" name="Test2(failed)">
+    <parameter name="env" value="dev"/>
+    <classes>
+      <class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.IJmeet_TestCases">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="endTest"/>
+          <include name="startTest"/>
+          <include name="enterlogindetailsandsigninbyexceldata"/>
+          <include name="launch_Browser"/>
+          <include name="scheduledmeeting" invocation-numbers="0"/>
+          <include name="enterlogindetailsandsignin" invocation-numbers="0"/>
+          <include name="quickmeeting" invocation-numbers="0"/>
+          <include name="SignINpage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.TestingShastra.Larkspur22A_FrameWorkmainDemo.IJmeet_TestCases -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

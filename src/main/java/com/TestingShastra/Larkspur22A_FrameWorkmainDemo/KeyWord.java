@@ -117,6 +117,7 @@ public class KeyWord {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("use-fake-device-for-media-stream");
 		options.addArguments("use-fake-ui-for-media-stream");
+		options.addArguments("--disable-notification");
 		if (browsername.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver(options);
 		} else if (browsername.equalsIgnoreCase("Firefox")) {

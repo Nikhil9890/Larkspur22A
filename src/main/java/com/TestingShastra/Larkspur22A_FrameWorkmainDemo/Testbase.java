@@ -19,7 +19,7 @@ public class Testbase extends KeyWord {
 	public static void startTest()
 	{
 	report = new ExtentReports(System.getProperty("user.dir")+"ExtentReportResults.html");
-	test = report.startTest("ExtentDemo");
+	test = report.startTest("Testbase");
 	}
 	
 	@AfterClass
@@ -41,5 +41,14 @@ public class Testbase extends KeyWord {
 	public static void closeBrowser() {
 		KeyWord.driver.quit();
 	}
+	
+//	//@BeforeMethod
+//	public void logstatus() {
+//		if() {
+//			test.log(LogStatus.PASS, "Testcase is passed")
+//		}else {
+//			test.log(LogStatus.FAIL, "Test Failed");
+//		}
+//	}
 	
 }
