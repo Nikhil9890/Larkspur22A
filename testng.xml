@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.HomepageTests">
-      </class>
-      <class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.IJmeet_TestCases"/>
-    </classes>
-  </test> <!-- Test -->
+	<test name="Test">
+		<classes>
+			<class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.HomepageTests"/>
+			<class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.IJmeet_TestCases"/>
+			<class name="com.TestingShastra.Larkspur22A_FrameWorkmainDemo.Amazon_Testcases" />			
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

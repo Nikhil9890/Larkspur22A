@@ -7,6 +7,8 @@ import java.util.Properties;
 
 import org.testng.annotations.Parameters;
 
+import com.TestingShastra.Larkspur22A_FrameWorkmainDemo.KeyWord;
+
 public class Fileutils {
 
 	// Write code to read properties file
@@ -17,7 +19,7 @@ public class Fileutils {
 															// java.runtime.version
 		String LocatorValue = "";
 		try {
-			FileInputStream fis = new FileInputStream(basedir + "\\src\\main\\resources\\OR.properties");
+			FileInputStream fis = new FileInputStream(basedir + "\\src\\main\\resources\\amazon.properties");
 			Properties prop = new Properties();
 			prop.load(fis); // .load method loads a code file with specified name from local file system to
 			// as dynamic library
@@ -49,17 +51,17 @@ public class Fileutils {
 		}
 		return LocatorValue;
 	}
-	
+
 	public static String getappurl(String env) {
 		String basedir = System.getProperty("user.dir");
-		String urlvalue="";
-		FileInputStream fis=null;
-		Properties prop=null;
+		String urlvalue = "";
+		FileInputStream fis = null;
+		Properties prop = null;
 		try {
-			fis= new FileInputStream(basedir+"/src/main/resources/Combine.properties");
-			prop= new Properties();
+			fis = new FileInputStream(basedir + "/src/main/resources/Combine.properties");
+			prop = new Properties();
 			prop.load(fis);
-			urlvalue = prop.getProperty("app"+env+"url");
+			urlvalue = prop.getProperty("app" + env + "url");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -69,6 +71,35 @@ public class Fileutils {
 		}
 		System.out.println(urlvalue);
 		return urlvalue;
+	}
+
+	public static void Clickon(String Locator) {
+		String loct = Fileutils.getLocator(Locator);
+		String part[] = loct.split("##");
+		String LocatorType = part[0];
+		String LocatorValue = part[1];
+		KeyWord.getWebElement(LocatorType, LocatorValue).click();
+	}
+
+	public static String getLocatorforany(String env) {
+		String basedir = System.getProperty("user.dir"); // used to returns the system property denoted by the specified
+															// key passed as its argument as like user.dir or os.name or
+															// java.runtime.version
+		String LocatorValue = "";
+		try {
+			FileInputStream fis = new FileInputStream(basedir + "\\src\\main\\resources\\amazon.properties");
+			Properties prop = new Properties();
+			prop.load(fis); // .load method loads a code file with specified name from local file system to
+			// as dynamic library
+			LocatorValue = prop.getProperty("app" + env + "url"); // getProperty() method return string containing the
+																	// value of
+			// property
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return LocatorValue;
 	}
 
 }

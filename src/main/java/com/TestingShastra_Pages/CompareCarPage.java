@@ -30,12 +30,22 @@ public class CompareCarPage extends CarWaleHomePage {
 	}
 	
 	public List<String> getPopularBrandsText() {
-		List<String> lstr=KeyWord.getTexts("xpath", PopularBrands);
+		try {
+			Thread.sleep(13000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		List<String> lstr=KeyWord.getTexts("xpath", "PopularBrands");
 		return lstr ;
 	}
 	
 	public List<String> getOtherBrandBrandsText() {
-		List<String> otstr=KeyWord.getTexts("xpath", OtherBrands);
+		try {
+			Thread.sleep(13000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		List<String> otstr=KeyWord.getTexts("xpath", "OtherBrands");
 		return otstr ;
 	}
 }

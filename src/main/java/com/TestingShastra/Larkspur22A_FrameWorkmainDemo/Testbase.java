@@ -34,7 +34,6 @@ public class Testbase extends KeyWord {
 		String env=System.getProperty("env");
 		System.out.println("environment"+env);
 		KeyWord.openbrowser("chrome");
-		KeyWord.launchUrl(Fileutils.getappurl(env));
 	}
 	
 	@AfterMethod

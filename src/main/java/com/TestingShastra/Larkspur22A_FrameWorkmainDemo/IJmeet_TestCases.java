@@ -21,7 +21,7 @@ public class IJmeet_TestCases extends Testbase {
 	@Test
 	public void SignINpage() {
 		String Expectedsigninpagetitle = "IJmeet";
-		//KeyWord.launchUrl(Fileutils.getlocatorforijmeet("url"));
+		KeyWord.launchUrl(Fileutils.getlocatorforijmeet("url"));
 		KeyWord.getWebElement(LocatorType.xpath, IjmeetLocator.HomePageSignIn).click();
 		String Actualsigninpagetitle = driver.getTitle();
 		Assert.assertEquals(Actualsigninpagetitle, Expectedsigninpagetitle);

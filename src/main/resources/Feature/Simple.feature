@@ -17,23 +17,18 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Infinity
+Feature: Simple
   I want to use this template for my feature file
 
   @tag1
   Scenario: Title of your scenario
     Given user click on comparenow button
-    When User click on select car icon
-    Then Check your all product under popular brands present in other brands
-
- 
-  Scenario Outline: Title of your scenario outline
-    Given first step
-    And I have <value1> and <value2>
-    When I add them
+    And I add them
+    When I have 5 and 6
     Then Addition must be even
 
+
     Examples: 
-      | name  | value | 
-      | value1 |     5 |
-      | value2 |     7 |
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |
