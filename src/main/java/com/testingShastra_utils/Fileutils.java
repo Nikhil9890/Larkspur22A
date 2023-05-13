@@ -73,14 +73,6 @@ public class Fileutils {
 		return urlvalue;
 	}
 
-	public static void Clickon(String Locator) {
-		String loct = Fileutils.getLocator(Locator);
-		String part[] = loct.split("##");
-		String LocatorType = part[0];
-		String LocatorValue = part[1];
-		KeyWord.getWebElement(LocatorType, LocatorValue).click();
-	}
-
 	public static String getLocatorforany(String env) {
 		String basedir = System.getProperty("user.dir"); // used to returns the system property denoted by the specified
 															// key passed as its argument as like user.dir or os.name or

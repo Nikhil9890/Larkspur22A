@@ -24,7 +24,13 @@ Feature: यह हमारी पहली विशेषता है
     Given ब्राउज़र खुला
     When User enter app url
     Then Application should launch
+  @tag2
+    Scenario: verify that popular product list must be sublist of other brands
+    Given user click on comparenow button
+    When User click on select car icon
+    Then Check your all product under popular brands present in other brands
     
+   
     
     #And check more outcomes
     #And some other precondition

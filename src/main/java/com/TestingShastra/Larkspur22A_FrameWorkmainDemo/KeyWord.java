@@ -150,11 +150,17 @@ public class KeyWord {
 	public static List<WebElement> getWebElements(String Pathaddress) {
 		return (List<WebElement>) driver.findElement(By.xpath(Pathaddress));
 	}
+	
+	public static void Clickon(String Locator) {
+		String loct = Fileutils.getLocator(Locator);
+		String part[] = loct.split("##");
+		String LocatorType = part[0];
+		String LocatorValue = part[1];
+		KeyWord.getWebElement(LocatorType, LocatorValue).click();
+	}
 
 	public static void scrollupPage() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 	}
-	
-	
 }
